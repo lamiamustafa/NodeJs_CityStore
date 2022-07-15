@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>welcome to <%=title%> </h1>
+
+        <table width="100%">
+            <tr>
+                <td>
+                    <a href="/products">Products</a>
+                </td>
+                <td align="right">
+                    <form method="POST" name="signup" action="/auth/signup">
+                        user name: <input name="username" id="username"/></br>
+                        email: <input name="email" id="email"/></br>
+                        password: <input type="password" name="password" id="password"/></br>
+                        <input type="submit" value="Sign Up"/>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

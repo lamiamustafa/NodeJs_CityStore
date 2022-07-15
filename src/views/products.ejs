@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>Products</h1>
+        <table>
+        <%products.map((product) => {%>
+            <tr>
+                <h3><%=product.name%></h3>   
+                <p><%=product.description%></p>               
+                <a href="./products/<%=product._id%>"><%=product.name%></a>
+            </tr>
+
+        <%}) %>
+        
+        </table>
+    </body>
+</html>
